@@ -1,0 +1,36 @@
+/* Resetando margens e padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+/* Container para centralizar a bola */
+.scene {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+/* Bola verde com sombra diagonal */
+.ball {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: green;
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.3); /* Sombra diagonal */
+  position: absolute;
+  bottom: 10px; /* Bola no "chão" */
+}
